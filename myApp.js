@@ -13,7 +13,9 @@ let app = express();
 //  })
 
 //serve static assetts
-app.use("/public", express.static(__dirname + "/public"))
+abspath = __dirname +"/public"
+app.use("/public", express.static(abspath))
+
 
 
 
