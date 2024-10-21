@@ -13,8 +13,7 @@ app.get("/", function(req, res) {
   })
 
 //serve static assetts
-abspath = __dirname +"/public"
-app.use("/public", express.static(abspath))
+app.use("/public", express.static(__dirname +"/public"))
 
 
 
