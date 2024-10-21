@@ -8,10 +8,12 @@ console.log("Hello World");
 //  })
 
 //Serve an Html file
-app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/views/index.html");
-  })
+//app.get("/", function(req, res) {
+//    res.sendFile(__dirname + "/views/index.html");
+//  })
 
+//serve static assetts
+app.use("/public", express.static(__dirname + "/public"))
 
 
 
