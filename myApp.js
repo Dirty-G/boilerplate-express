@@ -15,6 +15,10 @@ app.get("/", function(req, res) {
 //serve static assetts
 app.use("/public", express.static(__dirname +"/public"))
 
+//serve json message
+app.get("/json", function(req,res){
+    res.json({"message": "Hello json"});
+  });
 
 
 
