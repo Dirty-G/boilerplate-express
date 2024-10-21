@@ -7,11 +7,10 @@ console.log("Hello World");
 //    res.send("Hello Express");
 //  })
 
-// send file
+//Serve an Html file
 app.get("/", function(req, res) {
-  res.sendFile(__dirname + "/public/index.html");
-});
-
+    res.sendFile(__dirname + "/views/index.html");
+  })
 
 
 
