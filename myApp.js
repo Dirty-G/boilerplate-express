@@ -8,9 +8,9 @@ let app = express();
 //  })
 
 //Serve an Html file
-//app.get("/", function(req, res) {
-//    res.sendFile(__dirname + "/views/index.html");
-//  })
+app.get("/", function(req, res) {
+    res.sendFile(__dirname + "/views/index.html");
+  })
 
 //serve static assetts
 abspath = __dirname +"/public"
